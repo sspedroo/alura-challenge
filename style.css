@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D8DFE8;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.header{
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.page-container{
+    display: flex;
+    gap: 15px;
+}
+
+.main-container{
+   margin: 1% 0% 0% 10%;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   width: 50vw;
+   min-height: 100vh;
+}
+
+#text_area {
+    width: 80%;
+    min-height: 70%;
+    background-color: #D8DFE8;
+    border: none;
+    margin:2% 0% 0% 2%;
+    color: #0A3871;
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+#text_area:focus{
+    outline: none;
+}
+
+
+#text_area::placeholder{
+    color: #0A3871;
+    font-size: 2rem;
+}
+
+
+
+.messages-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    width: 450px;
+    margin-right: 2%;
+    max-height: 98vh;
+    text-align: center;
+}
+
+.alert{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    margin-left: 1%;
+    font-size: 1rem;
+}
+
+.buttons{
+    margin:0% 0% 5% 5%;
+}
+
+#lock, #unlock{
+    border-radius: 24px;
+    font-weight: 400;
+    transition: ease-in-out 500ms;
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+
+#lock:hover,
+#unlock:hover {
+    transform: scale(1.1) ;
+    font-weight: 700;
+    transition: ease-in-out 500ms;
+}
+
+#lock {
+    width: 30%;
+    height: 67px;
+    background-color: #0a3871;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    margin-right: 24px;
+}
+
+#unlock {
+    width: 30%;
+    height: 67px;
+    background-color: #D8DFE8;
+    color: #0a3871;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #0a3871;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    padding-top: 1%;
+    text-align: center;
+    max-height: 100vh;
+    background-color:#4289e0;
+    gap: 10px;
+}
+
+.my-links{
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.my-links li  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75rem;  
+    align-items: center;
+    gap: 5px;
+}
+
+
+.my-links a:active, .my-links a:visited, .my-links a:any-link {
+    color: inherit;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.my-links img{
+    width: 2%;
+}
+
+@media screen and (min-width:320px) and (max-width: 480px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .header{
+       margin: none;
+    }
+
+    .page-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-container{
+        margin: 5% 0% 0% 5% ;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100vw;
+        min-height: 100vh;
+     }
+
+     #text_area {
+        width: 100vw;
+        min-height: 100vh;
+        background-color: #D8DFE8;
+        border: none;
+        margin:2% 0% 0% 2%;
+        color: #0A3871;
+        font-size: 2rem;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .messages-container{
+        padding: 5% 0% 5% 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;  
+        width: 95vw;
+        word-wrap: break-word;
+    }
+
+    .messages-container img {
+        display: none;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    #lock, #unlock{
+        border-radius: 24px;
+        font-weight: 400;
+        width: 90%;
+    }
+
+    #lock {
+        background-color: #0a3871;
+        color: #FFFFFF;
+        font-family: 'Inter', sans-serif;
+        border: none;
+        margin-bottom: 10px;        
+    }
+
+    #unlock {
+        background-color: #D8DFE8;
+        color: #0a3871;
+        font-family: 'Inter', sans-serif;
+        border: 1px solid #0a3871;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width:100%;
+        height: 100%;
+        background-color:#4289e0;
+        padding: 0px;
+        margin: 10px 0px 0px 10px;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+
+    .my-links img{
+        width: 8%;
+    }
+}
